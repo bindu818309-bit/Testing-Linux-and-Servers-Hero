@@ -1,0 +1,28 @@
+
+1. Created User Accounts:
+   -sudo useradd -m Sarah
+   -sudo useradd -m mike
+2. Set passwords:
+   -sudo passwd Sarah
+   -sudo passwd mike
+3. Created Isolated Workspaces:
+   -sudo mkdir -p /home/Sarah/workspace
+   -sudo mkdir -p /home/mike/workspace
+4. Assigned ownership:
+   -sudo chown -R Sarah:Sarah /home/Sarah/workspace
+   -sudo chown -R mike:mike /home/mike/workspace
+5. Applied directory permissions (only owner can access):
+   -sudo chmod 700 /home/Sarah/workspace
+   -sudo chmod 700 /home/mike/workspace
+Verified the directories:
+    ls -ld /home/Sarah/workspace
+    ls -ld /home/mike/workspace
+
+Enforce Password Policy
+
+6. added password expiration policy(30 days):
+   -sudo chage -M 30 Sarah
+   -sudo chage -M 30 mike
+Verified password policies:
+   -sudo chage -l Sarah
+   -sudo chage -l mike
