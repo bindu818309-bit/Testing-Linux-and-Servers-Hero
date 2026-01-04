@@ -1,6 +1,6 @@
 # Testing-Linux-and-Servers-hero
 Devops Environment setup monitoring and User Management
-Task 1: System Monitoring Setup
+**Task 1: System Monitoring Setup**
 Objective
 
 To monitor CPU, memory, disk usage, and running processes, and log system metrics for performance analysis and capacity planning.
@@ -63,10 +63,7 @@ crontab -e
 
 0 * * * * /usr/local/bin/system_monitor.sh
 
-
-📸 Screenshot: metrics.log showing recorded system data.
-
-Task 2: User Management and Access Control
+**Task 2: User Management and Access Control**
 Objective
 
 Create secure user accounts with isolated directories and enforce password policies.
@@ -103,9 +100,6 @@ Verify:
 ls -ld /home/Sarah/workspace
 ls -ld /home/mike/workspace
 
-
-📸 Screenshot: Directory permissions output.
-
 2.3 Password Policy Enforcement
 
 Edit login definitions:
@@ -130,10 +124,7 @@ Verify:
 
 chage -l Sarah
 
-
-📸 Screenshot: Password aging details.
-
-Task 3: Backup Configuration for Web Servers
+**Task 3: Backup Configuration for Web Servers**
 Objective
 
 Automate weekly backups of Apache and Nginx configurations and document roots.
