@@ -1,12 +1,19 @@
 # Testing-Linux-and-Servers-hero
-Devops Environment setup monitoring and User Management
 **Task 1: System Monitoring Setup**
 Objective
 
 To monitor CPU, memory, disk usage, and running processes, and log system metrics for performance analysis and capacity planning.
 
 1.1 Install Monitoring Tools
+Install htop
 
+sudo apt update
+sudo apt install htop -y
+
+
+Verify:
+
+htop
 
 
 1.2 Disk Usage Monitoring
